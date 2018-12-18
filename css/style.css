@@ -5849,14 +5849,45 @@ a.text-dark:hover, a.text-dark:focus {
   -ms-flex-preferred-size: 25%;
       flex-basis: 25%;
 }
+.price-list-part.part-num:before {
+  content: "Номенклатура";
+  background: #b5ab8f;
+  color: #fff;
+  font-weight: 700;
+  display: block;
+  padding: 0 10px;
+  display: none;
+  margin-bottom: 3px;
+}
 .price-list-part.part-name {
   -ms-flex-preferred-size: 50%;
       flex-basis: 50%;
+}
+.price-list-part.part-name:before {
+  content: "Наименование";
+  background: #b5ab8f;
+  color: #fff;
+  font-weight: 700;
+  display: block;
+  padding: 0 10px;
+  display: none;
+  margin-bottom: 3px;
 }
 .price-list-part.part-cost {
   -ms-flex-preferred-size: 25%;
       flex-basis: 25%;
   text-align: right;
+  white-space: nowrap;
+}
+.price-list-part.part-cost:before {
+  content: "Стоимость, руб.";
+  background: #b5ab8f;
+  color: #fff;
+  font-weight: 700;
+  display: block;
+  padding: 0 10px;
+  margin-bottom: 3px;
+  display: none;
 }
 .main-contacts .item {
   font-size: 18px;
@@ -6109,13 +6140,13 @@ a.text-dark:hover, a.text-dark:focus {
   text-decoration: none;
 }
 .temp-icon-left-arrow {
-  background-image: url(../img/sprite-08590757125811475.png);
+  background-image: url(../img/sprite-07248506247537669.png);
   background-position: 0px 0px;
   width: 32px;
   height: 32px;
 }
 .temp-icon-right-arrow {
-  background-image: url(../img/sprite-08590757125811475.png);
+  background-image: url(../img/sprite-07248506247537669.png);
   background-position: -36px 0px;
   width: 32px;
   height: 32px;
@@ -9504,6 +9535,28 @@ a.text-dark:hover, a.text-dark:focus {
   .navbar-expand-lg > .container-fluid {
     padding-right: 0;
     padding-left: 0;
+  }
+  .price-list__header {
+    display: none;
+  }
+  .price-list__header, .price-list__item {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .price-list-part.part-num:before {
+    display: block;
+  }
+  .price-list-part.part-name:before {
+    display: block;
+  }
+  .price-list-part.part-cost {
+    text-align: left;
+  }
+  .price-list-part.part-cost:before {
+    display: block;
+    text-align: left;
   }
 }
 @media (max-width: 1199.98px) {
