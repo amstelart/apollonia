@@ -6084,6 +6084,44 @@ a.text-dark:hover, a.text-dark:focus {
   height: 34px;
   fill: #00bdb9;
 }
+.custom-list {
+  list-style: none;
+  padding-left: 0;
+}
+.custom-list li {
+  position: relative;
+  padding-left: 16px;
+}
+.custom-list li:before {
+  content: "";
+  width: 8px;
+  height: 8px;
+  background: #00bdb9;
+  border-radius: 50%;
+  position: absolute;
+  left: 0;
+  top: 8px;
+}
+.custom-num-list {
+  list-style: none;
+  padding-left: 0;
+  counter-reset: customNumListCounter;
+}
+.custom-num-list li:before {
+  counter-increment: customNumListCounter;
+  content: counter(customNumListCounter) ")";
+  color: #00bdb9;
+  margin-right: 5px;
+}
+.pos {
+  font-size: 12px;
+}
+.pos:before {
+  content: "*";
+  color: #ff1515;
+  font-size: 16px;
+  margin-right: 3px;
+}
 .page-header {
   background: #00bdb9;
   color: #fff;
@@ -6140,13 +6178,13 @@ a.text-dark:hover, a.text-dark:focus {
   text-decoration: none;
 }
 .temp-icon-left-arrow {
-  background-image: url(../img/sprite-07248506247537669.png);
+  background-image: url(../img/sprite-04575929828746086.png);
   background-position: 0px 0px;
   width: 32px;
   height: 32px;
 }
 .temp-icon-right-arrow {
-  background-image: url(../img/sprite-07248506247537669.png);
+  background-image: url(../img/sprite-04575929828746086.png);
   background-position: -36px 0px;
   width: 32px;
   height: 32px;
