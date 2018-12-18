@@ -1,0 +1,68 @@
+<!--DEV
+
+Нужно убрать пробел между @-ами:
+
+@ @include('blocks/page-footer/page-footer.html')
+
+-->
+
+<footer class="page-footer pt-4 pb-5">
+  <div class="container mb-5">
+    <div class="row">
+      <div class="col-lg-6 col-xl-6">
+        <div class="d-flex mb-4">
+          <a class="footer-logo" href="#"><img src="img/footer-logo.png" alt=""></a>
+          <nav class="footer-nav">
+            <ul>
+              <li><a href="#">Главная</a></li>
+              <li><a href="#">О нас</a></li>
+              <li><a href="#">Услуги</a></li>
+              <li><a href="#">Цены</a></li>
+              <li><a href="#">Наши работы</a></li>
+              <li><a href="#">Контакты</a></li>
+              <li><a href="#">Отзывы</a></li>
+              <li class="active"><a href="#">Вакансии</a></li>
+              <li><a href="#">Бридическая информация</a></li>
+              <li><a href="#">Карта сайта</a></li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+      <div class="col-md-3 col-lg-3 col-xl-2 text-lg-center">
+        <button class="btn btn-outline-light mb-3" data-toggle="modal" data-target="#reviewsModal">Оставить отзыв</button>
+      </div>
+      <div class="col-md-9 col-lg-3 col-xl-4">
+        <div class="footer-info d-flex flex-wrap align-items-start">
+          <div class="main-contacts main-contacts--footer">
+            <div class="item">
+              <svg width="26" height="26"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/sprite-svg.svg#icon-phone"></use></svg>
+              +7-920-709-34-64</div>
+            <div class="item">
+              <svg width="26" height="26"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/sprite-svg.svg#icon-map"></use></svg>
+              Курск, ул. Дружининская, 4</div>
+          </div>
+          <div class="social social--footer">
+            <a href="#" class="item">
+              <svg width="26" height="26"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/sprite-svg.svg#odnoklassniki-logo"></use></svg>
+            </a>
+            <a href="#" class="item">
+              <svg width="26" height="26"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/sprite-svg.svg#vk-logo"></use></svg>
+            </a>
+            <a href="#" class="item">
+              <svg width="26" height="26"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/sprite-svg.svg#instagram-logo"></use></svg>
+            </a>
+            <a href="#" class="item">
+              <svg width="26" height="26"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/sprite-svg.svg#facebook-logo"></use></svg>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="container">
+    <div class="d-flex justify-content-between page-footer-bottom">
+      <div class="small">Имеются противопоказания. Требуется консультация специалиста</div>
+      <div class="small">Разработано в <a href="#">Showbiz</a></div>
+    </div>
+  </div>
+</footer>
