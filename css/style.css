@@ -6004,6 +6004,10 @@ a.text-dark:hover, a.text-dark:focus {
   background: #dadfe0;
   margin-right: 20px;
   margin-left: 20px;
+  padding-left: 51px;
+  background-image: url("../img/admin-pic.png");
+  background-repeat: no-repeat;
+  background-position: 20px 20px;
 }
 .reviews-item .balloon.admin:after {
   content: "";
@@ -6104,13 +6108,13 @@ a.text-dark:hover, a.text-dark:focus {
   text-decoration: none;
 }
 .temp-icon-left-arrow {
-  background-image: url(../img/sprite-05891302895948414.png);
+  background-image: url(../img/sprite-03550126562017586.png);
   background-position: 0px 0px;
   width: 32px;
   height: 32px;
 }
 .temp-icon-right-arrow {
-  background-image: url(../img/sprite-05891302895948414.png);
+  background-image: url(../img/sprite-03550126562017586.png);
   background-position: -36px 0px;
   width: 32px;
   height: 32px;
