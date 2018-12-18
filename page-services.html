@@ -1,0 +1,393 @@
+<!DOCTYPE html>
+<html class="no-js page" lang="ru">
+
+<head>
+  <meta charset="utf-8">
+  <title>Аполлония</title>
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="format-detection" content="telephone=no">
+
+  <!-- <link rel="icon" type="image/png" sizes="32x32" href="img/favicon-32x32.png"> -->
+  <!-- <link rel="icon" type="image/png" sizes="16x16" href="img/favicon-16x16.png"> -->
+  <link rel="shortcut icon" href="img/favicon.ico">
+  <link href="https://fonts.googleapis.com/css?family=Exo+2:400,400i,600,600i,700,700i&amp;subset=cyrillic" rel="stylesheet">
+  <link href="css/style.css" rel="stylesheet" media="screen">
+
+  <script>
+    // Маркер работающего javascript
+    document.documentElement.className = document.documentElement.className.replace('no-js', 'js');
+    document.addEventListener('DOMContentLoaded', function(){
+      if (window.isMobile !== undefined) {
+        // console.log(isMobile);
+        if(isMobile.any) {
+          var rootClasses = ' is-mobile';
+          for (key in isMobile) {
+            if(typeof isMobile[key] === 'boolean' && isMobile[key] && key !== 'any') rootClasses += ' is-mobile--'+key;
+            if(typeof isMobile[key] === 'object' && key !== 'other') {
+              for (type in isMobile[key]) {
+                if(isMobile[key][type]) rootClasses += ' is-mobile--'+key+'-'+type;
+              }
+            }
+          }
+          document.documentElement.className += rootClasses;
+        }
+      }
+      else {
+        console.log('Классы для мобильных не добавлены: в сборке отсутствует isMobile.js');
+      }
+    });
+
+  </script>
+
+</head>
+
+<body>
+
+  <header class="page-header">
+
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-4 col-xl-4 d-flex justify-content-between">
+          <a href="index.html" class="logo">
+            <img src="img/logo.png" alt="">
+          </a>
+          <button class="navbar-toggler burger collapsed" type="button" data-toggle="collapse" data-target="#main-nav"><span></span></button>
+        </div>
+        <div class="col-md-4 col-lg-3 col-xl-4 text-center">
+          <button class="btn mb-3 btn-light" data-toggle="modal" data-target="#callModal">Заказать звонок</button>
+        </div>
+        <div class="col-md-8 col-lg-5 col-xl-4 d-flex flex-wrap">
+          <div class="main-contacts">
+            <div class="item">
+              <svg width="26" height="26">
+                <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/sprite-svg.svg#icon-phone"></use>
+              </svg>
+              +7-920-709-34-64
+            </div>
+            <div class="item">
+              <svg width="26" height="26">
+                <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/sprite-svg.svg#icon-map"></use>
+              </svg>
+                Курск, ул. Дружининская, 4
+            </div>
+          </div>
+          <div class="social social--header">
+            <a href="#" class="item">
+              <svg width="26" height="26"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/sprite-svg.svg#odnoklassniki-logo"></use></svg>
+            </a>
+            <a href="#" class="item">
+              <svg width="26" height="26"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/sprite-svg.svg#vk-logo"></use></svg>
+            </a>
+            <a href="#" class="item">
+              <svg width="26" height="26"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/sprite-svg.svg#instagram-logo"></use></svg>
+            </a>
+            <a href="#" class="item">
+              <svg width="26" height="26"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/sprite-svg.svg#facebook-logo"></use></svg>
+            </a>
+          </div>
+        </div>
+      </div>
+      <nav class="navbar navbar-expand-lg navbar-dark">
+        <!-- <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#main-nav">
+          <span class="navbar-toggler-icon"></span>
+        </button> -->
+        <div class="collapse navbar-collapse" id="main-nav">
+          <ul class="navbar-nav mr-auto justify-content-between w-100">
+            <li class="nav-item">
+              <a class="nav-link" href="index.html">Главная</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="page-about.html">О нас</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="page-services.html">Услуги</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" href="page-price.html">Цены</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="page-work.html">Наши работы</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="page-contacts.html">Контакты</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="page-reviews.html">Отзывы</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </div>
+
+  </header>
+
+
+  <main class="page-main" role="main">
+
+    <div class="page-heading py-4">
+      <div class="container">
+        <h1 class="page-title">Услуги</h1>
+      </div>
+    </div>
+
+    <div class="page-content">
+      <div class="container">
+        <div class="card-service-wrap">
+          <div class="row">
+            <div class="col-sm-12 col-md-6 col-lg-4 col-xl-3 mb-4">
+              <a href="#" class="card-service">
+                <img class="card-service__image" src="img/service-image-01.jpg" alt="">
+                <span class="card-service__title">Лечение кариеса</span>
+              </a>
+            </div>
+            <div class="col-sm-12 col-md-6 col-lg-4 col-xl-3 mb-4">
+              <a href="#" class="card-service">
+                <img class="card-service__image" src="img/service-image-02.jpg" alt="">
+                <span class="card-service__title">Отбеливание зубов</span>
+              </a>
+            </div>
+            <div class="col-sm-12 col-md-6 col-lg-4 col-xl-3 mb-4">
+              <a href="#" class="card-service">
+                <img class="card-service__image" src="img/service-image-03.jpg" alt="">
+                <span class="card-service__title">Съемное протезирование</span>
+              </a>
+            </div>
+            <div class="col-sm-12 col-md-6 col-lg-4 col-xl-3 mb-4">
+              <a href="#" class="card-service">
+                <img class="card-service__image" src="img/service-image-04.jpg" alt="">
+                <span class="card-service__title">Коронки</span>
+              </a>
+            </div>
+            <div class="col-sm-12 col-md-6 col-lg-4 col-xl-3 mb-4">
+              <a href="#" class="card-service">
+                <img class="card-service__image" src="img/service-image-05.jpg" alt="">
+                <span class="card-service__title">Виниры</span>
+              </a>
+            </div>
+            <div class="col-sm-12 col-md-6 col-lg-4 col-xl-3 mb-4">
+              <a href="#" class="card-service">
+                <img class="card-service__image" src="img/service-image-06.jpg" alt="">
+                <span class="card-service__title">Рентген зубов</span>
+              </a>
+            </div>
+            <div class="col-sm-12 col-md-6 col-lg-4 col-xl-3 mb-4">
+              <a href="#" class="card-service">
+                <img class="card-service__image" src="img/service-image-07.jpg" alt="">
+                <span class="card-service__title">Гигиена полости рта</span>
+              </a>
+            </div>
+            <div class="col-sm-12 col-md-6 col-lg-4 col-xl-3 mb-4">
+              <a href="#" class="card-service">
+                <img class="card-service__image" src="img/service-image-08.jpg" alt="">
+                <span class="card-service__title">Лечение пульпита</span>
+              </a>
+            </div>
+            <div class="col-sm-12 col-md-6 col-lg-4 col-xl-3 mb-4">
+              <a href="#" class="card-service">
+                <img class="card-service__image" src="img/service-image-09.jpg" alt="">
+                <span class="card-service__title">Зубные вкладки</span>
+              </a>
+            </div>
+            <div class="col-sm-12 col-md-6 col-lg-4 col-xl-3 mb-4">
+              <a href="#" class="card-service">
+                <img class="card-service__image" src="img/service-image-10.jpg" alt="">
+                <span class="card-service__title">Лечение периодонтитов</span>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </main>
+
+  <footer class="page-footer pt-4 pb-5">
+    <div class="container mb-5">
+      <div class="row">
+        <div class="col-lg-6 col-xl-6">
+          <div class="d-flex mb-4">
+            <a class="footer-logo" href="#"><img src="img/footer-logo.png" alt=""></a>
+            <nav class="footer-nav">
+              <ul>
+                <li><a href="#">Главная</a></li>
+                <li><a href="#">О нас</a></li>
+                <li><a href="#">Услуги</a></li>
+                <li><a href="#">Цены</a></li>
+                <li><a href="#">Наши работы</a></li>
+                <li><a href="#">Контакты</a></li>
+                <li><a href="#">Отзывы</a></li>
+                <li class="active"><a href="#">Вакансии</a></li>
+                <li><a href="#">Бридическая информация</a></li>
+                <li><a href="#">Карта сайта</a></li>
+              </ul>
+            </nav>
+          </div>
+        </div>
+        <div class="col-md-3 col-lg-3 col-xl-2 text-lg-center">
+          <button class="btn btn-outline-light mb-3" data-toggle="modal" data-target="#reviewsModal">Оставить отзыв</button>
+        </div>
+        <div class="col-md-9 col-lg-3 col-xl-4">
+          <div class="footer-info d-flex flex-wrap align-items-start">
+            <div class="main-contacts main-contacts--footer">
+              <div class="item">
+                <svg width="26" height="26"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/sprite-svg.svg#icon-phone"></use></svg>
+                +7-920-709-34-64</div>
+              <div class="item">
+                <svg width="26" height="26"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/sprite-svg.svg#icon-map"></use></svg>
+                Курск, ул. Дружининская, 4</div>
+            </div>
+            <div class="social social--footer">
+              <a href="#" class="item">
+                <svg width="26" height="26"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/sprite-svg.svg#odnoklassniki-logo"></use></svg>
+              </a>
+              <a href="#" class="item">
+                <svg width="26" height="26"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/sprite-svg.svg#vk-logo"></use></svg>
+              </a>
+              <a href="#" class="item">
+                <svg width="26" height="26"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/sprite-svg.svg#instagram-logo"></use></svg>
+              </a>
+              <a href="#" class="item">
+                <svg width="26" height="26"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/sprite-svg.svg#facebook-logo"></use></svg>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="container">
+      <div class="d-flex justify-content-between page-footer-bottom">
+        <div class="small">Имеются противопоказания. Требуется консультация специалиста</div>
+        <div class="small">Разработано в <a href="#">Showbiz</a></div>
+      </div>
+    </div>
+  </footer>
+
+  
+
+  <!-- Modal  Call -->
+  <div class="modal fade" id="callModal" tabindex="-1" role="dialog" aria-labelledby="callModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">Заказать звонок</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span></span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <form class="feedback-form-call" action="">
+            <div class="form-group required">
+              <input type="text" class="form-control" placeholder="Имя">
+            </div>
+            <div class="form-group required">
+              <input type="tel" class="form-control" placeholder="Телефон">
+            </div>
+            <div class="form-group required">
+              <input type="email" class="form-control" placeholder="E-mail">
+            </div>
+            <div class="form-group">
+              <input type="text" class="form-control" placeholder="Удобное время для звонка">
+            </div>
+            <div class="form-group text-center">
+              <div class="custom-control custom-checkbox my-1 mr-sm-2">
+                <input type="checkbox" class="custom-control-input" id="customContro1">
+                <label class="custom-control-label" for="customControl1">Даю согласие на обработку персональных данных</label>
+                <a href="#">Политика конфиденциальности</a>
+              </div>
+            </div>
+            <div class="form-group text-center">
+              <button type="submit" class="btn btn-form btn-primary">Отправить</button>
+            </div>
+            <p class="text-center font-weight-bold">Мы перезвоним вам в будние дни с 9:30 до 19:30</p>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal fade" id="signupModal" tabindex="-1" role="dialog" aria-labelledby="signupModal" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="signupModalLabel">Записаться на прием</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span></span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <form class="feedback-form-call" action="">
+            <div class="form-group required">
+              <input type="text" class="form-control" placeholder="Имя">
+            </div>
+            <div class="form-group required">
+              <input type="tel" class="form-control" placeholder="Телефон">
+            </div>
+            <div class="form-group">
+              <div class="custom-control custom-checkbox my-1 mr-sm-2">
+                <input type="checkbox" class="custom-control-input" id="customControl2">
+                <label class="custom-control-label" for="customControl2">Даю согласие на обработку персональных данных</label>
+                <a href="#">Политика конфиденциальности</a>
+              </div>
+            </div>
+            <div class="form-group text-center">
+              <button type="submit" class="btn btn-form btn-primary">Отправить</button>
+            </div>
+            <p class="text-center font-weight-bold">Мы перезвоним вам в будние дни с 9:30 до 19:30</p>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- modal отзывы -->
+  <div class="modal fade" id="reviewsModal" tabindex="-1" role="dialog" aria-labelledby="reviewsModal" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="reviewsModalLabel">Оставить отзыв</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span></span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <form class="feedback-form-call" action="">
+            <div class="form-group required">
+              <input type="text" class="form-control" placeholder="Имя">
+            </div>
+            <div class="form-group required">
+              <input type="tel" class="form-control" placeholder="Телефон">
+            </div>
+            <div class="form-group required">
+              <input type="email" class="form-control" placeholder="E-mail">
+            </div>
+            <div class="form-group">
+              <textarea class="form-control" id="exampleFormControlTextarea1" placeholder="Текст отзыва" rows="3"></textarea>
+            </div>
+            <div class="form-group text-center">
+              <button type="submit" class="btn btn-form btn-primary">Отправить</button>
+            </div>
+            <div class="form-group text-center">
+              <div class="custom-control custom-checkbox my-1 mr-sm-2">
+                <input type="checkbox" class="custom-control-input" id="customControl3">
+                <label class="custom-control-label" for="customControl3">Даю согласие на обработку персональных данных</label>
+                <a href="#">Политика конфиденциальности</a>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="js/jquery.min.js"></script>
+  <script src="js/jquery-migrate.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/jquery.fancybox.min.js"></script>
+  <script src="js/svg4everybody.js"></script>
+  <script src="js/ofi.js"></script>
+  <script src="js/isMobile.min.js"></script>
+  <script src="js/owl.carousel.js"></script>
+  <script src="js/script.js"></script>
+
+</body>
+</html>
