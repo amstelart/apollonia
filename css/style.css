@@ -5533,6 +5533,7 @@ a.text-dark:hover, a.text-dark:focus {
 }
 .btn {
   line-height: 1.2;
+  font-weight: 700;
 }
 .btn.mw-165 {
   min-width: 165px;
@@ -5775,6 +5776,9 @@ a.text-dark:hover, a.text-dark:focus {
   width: 100%;
   font-size: 14px;
   padding: 0.4rem 0.75rem;
+}
+.team-card__footer .btn-link {
+  font-weight: 400;
 }
 .card-service {
   position: relative;
@@ -6038,7 +6042,7 @@ a.text-dark:hover, a.text-dark:focus {
 .page-header {
   background: #00bdb9;
   color: #fff;
-  padding: 20px 0;
+  padding: 20px 0 5px 0;
 }
 .page-header .main-contacts {
   -webkit-box-flex: 1;
@@ -6091,13 +6095,13 @@ a.text-dark:hover, a.text-dark:focus {
   text-decoration: none;
 }
 .temp-icon-left-arrow {
-  background-image: url(../img/sprite-091835931502446.png);
+  background-image: url(../img/sprite-05281224620212028.png);
   background-position: 0px 0px;
   width: 32px;
   height: 32px;
 }
 .temp-icon-right-arrow {
-  background-image: url(../img/sprite-091835931502446.png);
+  background-image: url(../img/sprite-05281224620212028.png);
   background-position: -36px 0px;
   width: 32px;
   height: 32px;
@@ -8581,6 +8585,9 @@ a.text-dark:hover, a.text-dark:focus {
   .text-lg-center {
     text-align: center !important;
   }
+  .navbar-expand-lg .navbar-nav .nav-item:last-child .nav-link {
+    padding-right: 0;
+  }
   .social--header {
     max-width: 70px;
   }
@@ -8593,7 +8600,7 @@ a.text-dark:hover, a.text-dark:focus {
 }
 @media (min-width: 1200px) {
   .container {
-    max-width: 1140px;
+    max-width: 1170px;
   }
   .col-xl {
     -ms-flex-preferred-size: 0;
@@ -9293,7 +9300,8 @@ a.text-dark:hover, a.text-dark:focus {
   }
   .page-header .navbar {
     padding-top: 0;
-    margin-left: 360px;
+    margin-left: 383px;
+    margin-top: -8px;
   }
 }
 @media (max-width: 575.98px) {
