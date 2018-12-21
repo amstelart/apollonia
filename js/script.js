@@ -254,6 +254,7 @@ document.addEventListener('DOMContentLoaded', function(){
 $( document ).ready(function() {
 
   $(".phone-mask").mask("+7(999) 999-9999");
+  $(".time-mask").mask("99:99");
 
   if(window.matchMedia('(min-width: 992px)').matches)
   {
